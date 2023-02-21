@@ -1,0 +1,26 @@
+:host h1 {
+    color: #9E9E9E;
+    padding: 10px;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+:host a {
+    text-decoration: none;
+}
+
+:host span.dotcom {
+    color: #C2185B;
+}
+
+:host span.cat {
+    color: #E0E0E0;
+}
+
+:host .search-tags {
+    padding: 10px;
+}
+
+:host .search-tags a {
+    text-decoration: none;
+}

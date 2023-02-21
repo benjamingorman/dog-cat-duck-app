@@ -1,0 +1,14 @@
+<a [routerLink]="'home'">
+    <h1>dog<span class="cat">cat</span>duck<span class="dotcom">.com</span></h1>
+</a>
+
+<mat-chip-listbox class="search-tags">
+    <a [routerLink]="['/favourites']">
+        <mat-chip-option>favourites</mat-chip-option>
+    </a>
+    <ng-container *ngFor="let tag of getSortedTags()">
+        <a [routerLink]="['/tag', tag]">
+            <mat-chip-option color="primary">{{tag}} {{searchTags[tag]}}</mat-chip-option>
+        </a>
+    </ng-container>
+</mat-chip-listbox>

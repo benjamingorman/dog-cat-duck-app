@@ -1,0 +1,14 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <ng-container *ngFor="let image_metadata of images">
+    <mat-grid-tile >
+      <img src={{getImageURL(image_metadata.filename)}} />
+      <button mat-fab color="accent" clickable (click)="onClickFavouriteButton(image_metadata.id)">
+          <mat-icon>favorite</mat-icon>
+      </button>
+    </mat-grid-tile>
+  </ng-container>
+</mat-grid-list>
+
+<button mat-fab class="reload-button" color="primary" clickable (click)="onClickRefresh()">
+    <mat-icon>refresh</mat-icon>
+</button>
